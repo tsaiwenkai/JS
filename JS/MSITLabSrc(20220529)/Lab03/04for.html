@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>04for.html</title>        
+    <style>
+        table{
+            border:2px solid #808080;
+        }
+    </style>
 </head>
 <body>
     <script>        
@@ -13,10 +18,11 @@
         //    console.log("i="+i+",sum="+sum);
         //}
 
-        for (var i = 2; i < 9; i++) {
-            for (var j = 1; j < 9; j++) {
-                document.write(`<table><tr><td>"${i}""${j}"`)
-            }
+        for (var i = 2; i < 10; i++) {
+            document.write(`<table><tr>${i}<tr>`)
+            for (var j = 1; j < 10; j++) {
+                document.write(`<table><tr><td>${i} * ${j}= ${i*j}<td><tr>`)
+            } 
         }
     </script>
 </body>
