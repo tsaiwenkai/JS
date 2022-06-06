@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>02DataTypes.html</title>
+</head>
+<body>   
+    <script>
+        //數字變數
+        let a = 0;
+        console.log(`a=${a} , typeof=${typeof a}`)  //number
+        //字串變數
+        a = "123";
+        console.log(`a=${a} , typeof=${typeof a}`)  //string
+        //布林變數             
+        b = true;
+        c = b + 1;
+        console.log(`b=${b} , typeof=${typeof c}`)// b=booling c=number
+        if (0) {
+            console.log(true)
+        }
+        else {
+            console.log(false)
+        }
+        //null
+        let n = null
+        console.log(`a=${n} , typeof=${typeof n}`)
+        //如果沒有初始值，JavaScript會自動將變數的值初始化為undefined(預設值 default value)        
+        let u;
+        console.log(`a=${u} , typeof=${typeof u}`)
+        let e = NaN;
+        let f = 1
+        console.log(e + f);
+        //字串轉換為數值
+        console.log("parselnt(33p)=" + `${parseInt("33p")}`);
+        console.log("parselnt(12.522)=" + `${parseInt("12.522")}`);
+        console.log("parselnt(p33)=" + `${parseInt("p33")}`);
+
+
+        //數值轉換為字串
+        let z = 12.5
+        console.log(`${z}`);
+        console.log(z.toString());
+        console.log("z=" + z);
+    </script>
+</body>
+</html>

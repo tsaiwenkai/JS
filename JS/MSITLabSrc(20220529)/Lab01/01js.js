@@ -1,0 +1,1 @@
+﻿document.write("hellow2<br>js");
