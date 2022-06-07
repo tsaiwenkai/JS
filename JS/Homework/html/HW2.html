@@ -3,24 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>02checkPassword.html</title>
+    <link rel="stylesheet" href="/Homework/StyleSheet1.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+        fieldset {
+            border: 2px solid #808080;
+            width: 500px;
+            margin: 100px auto;
+            border-radius: 25px;
+            box-shadow: 15px 15px 5px #808080;
+        }
+
+            fieldset:hover {
+                box-shadow: 0 0 15px #808080;
+
+            }
+
+        legend {
+            text-shadow: 5px -5px 5px #808080
+        }
+
+    </style>
 </head>
 <body>
-    <fieldset style="border:2px solid #808080; width:500px; margin:100px auto;border-radius:25px;">
-        <legend>Form check</legend>
-        <label>姓名: <input type="text" id="idtxtname" size="6" /></label>
-        
+    <fieldset>
+        <legend style="font-family:'Merriweather', serif;">Form check</legend>
+        <label>姓名: <input type="text" id="idtxtname" size="6" onblur="checkName();" /></label>
         <span id="idnamesp"></span><br />
-        <input type="button" id="idbtNA" value="check姓名" onclick="checkName();" /><br />
+        <!--<input type="button" id="idbtNA" value="check姓名" onclick="checkName();" /><br />-->
         <span style="font-size:10px; color:gray">(1.不可空白 2.至少兩個字以上 3.必須全部為中文字)</span>
         <hr />
-        <label>密碼: <input type="password" id="idPwd" size="6" /></label>
-        
+        <label>密碼: <input type="password" id="idPwd" size="6" onblur="checkPwd();" /></label>
         <span id="idsp"></span><br />
-        <input type="button" id="idbut" value="checkPassword" onclick="checkPwd();" /><br />
+        <!--<input type="button" id="idbut" value="checkPassword" onclick="checkPwd();" /><br />-->
         <span style="font-size:10px;color:gray">(1.不可空白 2.至少6個字以上 3.必須包含英文數字,特殊字元(!@#$%^&*))</span>
         <hr />
 
-        <label>日期: <input type="text" id="txtdate" size="6" /></label>   
+        <label>日期: <input type="text" id="txtdate" size="6" /></label>
         <span id="iddatesp">span</span><br />
         <input type="button" id="idbtdate" value="check生日" onclick="checkdate();" /><br />
         <span style="font-size:10px;color:gray">格式:西元年/月/日(yyyy/mm/dd)</span>
@@ -47,7 +67,7 @@
                 }
                 flag2 = true;
                 if (flag1 && flag2)
-                    namsp.innerHTML="成功!";
+                    namsp.innerHTML = "成功!";
             }
             else
                 namsp.innerHTML = "請輸入兩個字以上";
@@ -85,7 +105,7 @@
                     sp.innerHTML = "incorrect";
             }
             else {
-                sp.innerHTML="請輸入超過6個字"
+                sp.innerHTML = "請輸入超過6個字"
             }
         }
         function checkdate() {
@@ -96,9 +116,9 @@
                 return;
             }
             let date = txtdate.split('/');
-            date[1] = date[1] - 1;
+
             let d = new Date(date[0], date[1], date[2]);
-            let m = d.getMonth() - 1;
+            let m = d.getMonth();
             let dt = d.getDate();
             let y = d.getFullYear();
 
@@ -120,7 +140,7 @@
             //else if (date[2].length >= 2 && date[2] < dt) {
             //    flage3 = true;
             //}
-            //else if (flage1 == true && flage2== true && flage3==true ) 
+            //else if (flage1 == true && flage2== true && flage3==true )
             //    datesp.innerHTML = "成功!"
             //else datesp.innerHTML="請輸入正確日期格式"
         }
