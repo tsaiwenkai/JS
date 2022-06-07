@@ -7,18 +7,23 @@
 <body>
     <div id="info"></div>
     <script>
-        let str = "java script";  //字串變數        
-        //字串物件
+        let str = "java script";  //字串變數       
+        console.log(typeof str);//string
 
-        console.log("strObj.charAt(3)=");
-        console.log("strObj.charCodeAt(3)=");
-        console.log("strObj.indexOf('a')=");
-        console.log("strObj.lastIndexOf('a')=");
-        console.log("strObj.lastIndexOf('@')=");
-        console.log("strObj.substr(5,3)=");
-        console.log("strObj.substr(5)=");
-        console.log("strObj.substring(5,8)=");
-        console.log("strObj.split(' ')=");
+        //字串物件
+        let strObj = new String("Hellow java script")
+
+        console.log("strObj.charAt(3)=" + strObj.charAt(3)); // l
+        console.log("strObj.charCodeAt(3)=" + strObj.charCodeAt(3));// 10進制 108
+        console.log("strObj.indexOf('a')=" + strObj.indexOf(`a`));//8
+        console.log("strObj.lastIndexOf('a')=" + strObj.lastIndexOf(`a`));//10
+        console.log("strObj.lastIndexOf('@')=" + strObj.lastIndexOf(`@`));//-1
+        console.log("strObj.substr(5,3)=" + strObj.substr(5, 3));//w j
+        console.log("strObj.substr(5)=" + strObj.substr(5));//w java script
+        console.log("strObj.substring(5,8)=" + strObj.substring(5, 8));//w j
+        console.log("strObj.split(' ')=" + strObj.split(' ')); //Hellow,java,script 跟前面字串相加=字串
+        let strary = strObj.split(' ');
+        console.log(strary,`2`);
         console.log("strObj.toUpperCase()=");
     </script>
 </body>

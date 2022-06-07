@@ -8,6 +8,7 @@
     <script>
         //==========定義函數==================
         //方法一函數宣告，定義帶參數的函數
+        
         function add1(x, y){
             return x*y;
         }
@@ -17,7 +18,7 @@
         console.log(add1(1, 2));
         console.log(add1(1));
         console.log(add1(1, 2,3));
-
+       
         //JavaScript沒有規定function的參數及呼叫function時給予的參數數量必須要一致
         //少掉的參數為undefined，而多的參數會被忽略
         //預設參數值(ES6)
@@ -29,10 +30,11 @@
 
         //==========定義函數==================
         //方法二暱名函數
+        
         var add3 = function (x, y) {
             return x * y;
         }
-        console.log(add3(2,4));
+        console.log(add3(2, 4));
 
         //==========定義函數==================
         //方法三箭頭函數(arrow function)
@@ -51,6 +53,12 @@
         //只有一個參數，()可省略
         var add7= x  => x * 3;
         console.log(add7(10))
+
+        //列印內容
+        //呼叫函數如果不帶()會指到函數本身的內容
+
+        console.log(`add5="${add5}"`);
+        console.log(`add7="${add7}"`);
     </script>
 </body>
 </html>

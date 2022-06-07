@@ -6,15 +6,34 @@
 </head>
 <body>
     <script>
-            //廣域(全域)變數
+        //    //廣域(全域)變數
+        //var a = 10;
     
+        //    //函數宣告定義
+        //function f(){
+        //    a = 100;
+        //    console.log(`function a =${a}`);
+        //}
+        //console.log(`befor function a=${a}`);
+        //f();
+        //console.log(`call function a=${a}`);
     
-            //函數宣告定義
-    
-    
+        //    //呼叫函數
+        //廣域(全域)變數
+        var a = 10;
+
+        //函數宣告定義
+        function f() {
+            var a = 11;
+            for (let a = 1; a < 4; a++) {
+                console.log(` a =${a}`);
+            }
+        }
+       
             //呼叫函數
-
-
+        console.log(`befor for a=${a}`);
+        f();
+        console.log(`call for a=${a}`);
     </script>
 </body>
 </html>
