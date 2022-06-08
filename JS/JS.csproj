@@ -70,6 +70,7 @@
     <Content Include="Homework\html\HW2.html" />
     <Content Include="Homework\html\HW1.html" />
     <Content Include="Homework\css\StyleSheet1.css" />
+    <Content Include="Homework\hw2.js" />
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\02getElementContent.html" />
@@ -83,6 +84,7 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab03\05while.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\01functionMethod.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab04\02varScope.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab05\01functionMethodAppendix.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\01stringObject.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\02checkPassword.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab05\03DateObject.html" />
@@ -217,9 +219,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Homework\js\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -9,8 +9,13 @@
         //Array 物件
 
 
-        
-        //let myfoods = [["apple", "banana", "grape"], ["pork", "beef"]];
+
+        let myfoods = [["apple", "banana", "grape"], ["pork", "beef"]];
+        for (let i of myfoods) {
+            for (let j of i) {
+                console.log(j);
+            }
+        }
         // for (let i = 0, maxi = myfoods.length; i < maxi; i++) {
         //     for (let j = 0, maxj = myfoods[i].length; j < maxj; j++) {
         //         console.log(myfoods[i][j]);
@@ -18,7 +23,11 @@
         // }
 
         //Array 方法
-        
+        let p = [1, 2, 3];
+        let k = ["4", "5", "6"];
+        console.log(p.concat(k));
+        console.log(p.join("-"));
+        console.log(p.splice(0,1,"5"))
     </script>
 </body>
 </html>

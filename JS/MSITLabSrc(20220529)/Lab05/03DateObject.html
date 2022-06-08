@@ -8,9 +8,16 @@
     <script>
         //建立日期物件語法 1
         let d = new Date();
-
+        console.log(d);
         //建立日期物件語法 2
-
+        d = new Date("2022-03-19");
+        console.log(d);
+        d = new Date("2022/03/19");
+        console.log(d);
+        d = new Date("2022-03-19T11:20:30");
+        console.log(d);
+        d = new Date("2022/03/19 11:20:30 pm");
+        console.log(d);
         //建立日期物件語法 3
 
         let theYear = d.getFullYear() - 1911;

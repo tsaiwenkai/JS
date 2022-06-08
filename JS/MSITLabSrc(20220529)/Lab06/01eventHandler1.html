@@ -2,19 +2,40 @@
 <html lang="zh-tw">
 <head>
     <meta charset="UTF-8">
-    <title>01eventHandler1.html</title>    
+    <title>01eventHandler1.html</title>
+    <script>
+        function f1() {
+            alert("method 1");
+        }
+        function f2() {
+            alert("method 2");
+        }
+        function f3() {
+            alert("method 3");
+        }
+        function init() {
+            document.getElementById("f2").onclick = f2;
+            document.getElementById("f2").onclick = function () {
+                alert("method 2");
+            };
+            document.getElementById("f2").onclick = () => {
+                alert("method 2");
+            };
+            document.getElementById("f3").addEventListener("click", f3);
+        }
+        window.onload=init;
+    </script>
 </head>
 
 <body>
     <!--HTML屬性事件處理程序-->
-   
+    <h1 onclick="f1();">method 1</h1>
 
     <!-- JavaScript屬性事件處理程序 -->
-    
+    <h1 id="f2">method 2</h1>
 
     <!-- W3C DOM 事件處理程序 -->
-    <script>
-        
-    </script>
+    <h1 id="f3">method 3</h1>
+
 </body>
 </html>

@@ -7,10 +7,25 @@
 <body>
     <div id="myDiv"></div>
     <script>
-    
-    
+        let cars = {
+            brand: "B & W",
+            "想不到吧 有空格": 300,
+            color: "bule",
+            display: function () {
+                return `${this.brand}, ${this["想不到吧 有空格"]}`;
+            }          
+        }
+        console.log(cars);
+        console.log(cars.display);
+        //for...in
 
-    //for..in
+        let t = document.getElementById("myDiv")
+        for (popr in cars) {
+            console.log(popr);
+            console.log(cars[popr]);
+            t.innerHTML += `<li>cars["${popr}"]=${cars[popr]}</li>`
+        }
+
 
     
     </script>        

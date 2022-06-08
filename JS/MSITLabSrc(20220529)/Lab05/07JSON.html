@@ -48,8 +48,21 @@
         //data.emps - array             
         //data.emps[0] - object       
         //data.emps[0].name - Tom       
+        //console.log(data);
+        //console.log(data.emps);
+        //console.log(data.emps[0]);
+        //console.log(data.emps[0].name);
+        let namese, yr, sal
+        let str="<ul>"
+        for (let e of data.emps) {
+            namese = e.name;
+            yr = e.workYears;
+            sal = e.salary;
+            str += `<li>${namese},${yr},${sal}</li>`;
+        };
+        str += "<ul>";
+        document.getElementById("div1").innerHTML = str;
 
-        
     </script>
 </body>
 </html>
