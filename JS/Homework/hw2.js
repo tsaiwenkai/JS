@@ -95,3 +95,16 @@ function checkdate() {
     //    datesp.innerHTML = "成功!"
     //else datesp.innerHTML="請輸入正確日期格式"
 }
+
+//-------------------------------------------------------------------------------------
+//星星
+let star = document.querySelectorAll('input');
+let showValue = document.querySelector('#rating-value');
+
+for (let i = 0; i < star.length; i++) {
+    star[i].addEventListener('click', function () {
+        i = this.value;
+
+        showValue.innerHTML = i + " out of 5";
+    });
+}

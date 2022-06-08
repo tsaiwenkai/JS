@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>02dynamicStyleImg.html</title>
+    <link rel="stylesheet" href="/Homework/css/StyleSheet1.css" />
+    <style>
+        .s {
+            filter: grayscale(1); /*沒有任何色彩的黑白影像*/
+        }
+
+        .n {
+            filter: grayscale(0); /*顏色不變*/
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="rating">
+        <img id="idstar" class="s" src="../Image/star.jpg" />
+        <img id="idstar" class="s" src="../Image/star.jpg" />
+        <img id="idstar" class="s" src="../Image/star.jpg" />
+        <img id="idstar" class="s" src="../Image/star.jpg" />
+        <img id="idstar" class="s" src="../Image/star.jpg" />
+    </div>
+    <script>
+        // http://blog.shihshih.com/css-filter/
+        //document.getElementById("idstar").addEventListener("mouseover", mouseOver);  //事件繫結，滑鼠滑入
+        //document.getElementById("idstar").addEventListener("mouseout", mouseOut);    //事件繫結，滑鼠滑出
+
+        const stars = document.querySelector(".rating").children
+        for (var i = 0; i < stars.length; i++) {
+            stars[i].addEventListener("mouseover", function () {
+                stars[i].className = "n";
+            });
+        }
+
+
+            //function mouseOut() {
+            //    document.getElementById("idstar").className = "s";
+            //}
+    </script>
+</body>
+</html>
