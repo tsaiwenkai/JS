@@ -27,15 +27,16 @@
         //IE8 回傳1，IE9~10,edge,chrome,friefox,safari 回傳0 表示使用者按下左鍵
         //IE8 回傳4，IE9~10,edge,chrome,friefox,safari 回傳1 表示使用者按下滾輪
         //IE8 回傳2，IE9~10,edge,chrome,friefox,safari 回傳2 表示使用者按下右鍵
-        function FirefoxmouseDown(nsevent) {  //以event物件作為參數來使用
+        function mouseDown(p,nsevent) {  //以event物件作為參數來使用
             //console.log(nsevent);
+            alert(p);
             alert(nsevent.type);
             alert(nsevent.button);
         }
       
 
         //W3C DOM 事件處理程序(IE9以上)
-        //document.getElementById("idmouse2").addEventListener("mousedown", mouseDown);  //事件繫結                               
+        document.getElementById("idmouse2").addEventListener("mousedown", function () { mouseDown("text",event) });  //事件繫結                               
 
 
         //JavaScript屬性事件處理程序(IE8以下)

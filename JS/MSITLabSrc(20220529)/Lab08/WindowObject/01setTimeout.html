@@ -8,14 +8,17 @@
 <body>    
 	<input type="button" id="idbutstop" value="停止轉向連結" />
     <script>
+        //alert(window.alert)
         function stopf() {
-                //window.clearTimeout-停止計時器            
-
+            //window.clearTimeout-停止計時器            
+            clearTimeout(t);
         }
-
+        
         //轉向連結到 https://www.ispan.com.tw
         //slide105,location.href-轉向連結到其它網址
-
+        let t=window.setTimeout(function () {
+            location.href = "https://www.ispan.com.tw";
+        }, 2000)
 
 
         document.getElementById("idbutstop").addEventListener("click", stopf);  //事件繫結      

@@ -71,7 +71,11 @@
     <Content Include="Homework\html\HW2.html" />
     <Content Include="Homework\html\HW1.html" />
     <Content Include="Homework\css\StyleSheet1.css" />
+    <Content Include="Homework\html\HW4.html" />
     <Content Include="Homework\hw2.js" />
+    <Content Include="Homework\image\1.jpg" />
+    <Content Include="Homework\image\2.jpg" />
+    <Content Include="Homework\image\3.jpg" />
     <Content Include="Homework\image\star.jpg" />
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
