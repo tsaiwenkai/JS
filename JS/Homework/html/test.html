@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/Homework/css/StyleSheet1.css" />
+</head>
+<body>
+    <fieldset >
+        <div>
+        <img src="../image/changepic/1.jpg" id="myImg" style="position:center"/><br />
+        <input type="button" value="<" onclick="next(-1)" />
+            <span>1234</span>
+        <input type="button" value=">" onclick="next(1)" />
+        </div>
+    </fieldset>
+    <script>
+        var imgArry = [`../image/changepic/1.jpg`,`../image/changepic/2.jpg`,`../image/changepic/3.jpg`,`../image/changepic/4.jpg`,`../image/changepic/5.jpg`]
+        var ImgObj = document.getElementById("myImg");
+        let index = 0;
+
+        function next(n) {      
+            index += n;
+            if (index >= imgArry.length) {
+                index = 0;
+            }
+            else if (index < 0) {
+                index = imgArry.length - 1;
+            }
+            ImgObj.src = imgArry[index];
+        }
+        window.setInterval("next(1)", 2000);
+    </script>
+</body>
+</html>

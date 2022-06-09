@@ -3,6 +3,7 @@ fieldset {
     border: 2px solid #808080;
     width: 500px;
     margin: 100px auto;
+        
     border-radius: 25px;
     box-shadow: 15px 15px 5px #808080;
 }
