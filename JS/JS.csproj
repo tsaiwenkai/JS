@@ -71,7 +71,7 @@
     <Content Include="Homework\html\HW2.html" />
     <Content Include="Homework\html\HW1.html" />
     <Content Include="Homework\css\StyleSheet1.css" />
-    <Content Include="Homework\html\test.html" />
+    <Content Include="Homework\html\HW4.html" />
     <Content Include="Homework\hw2.js" />
     <Content Include="Homework\image\changepic\1.jpg" />
     <Content Include="Homework\image\changepic\2.jpg" />
@@ -151,8 +151,10 @@
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taichung.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taipei.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\images\Taoyuan.gif" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\images\頂級義大利咖啡膠囊.jpg" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\01setTimeout.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\02setclock.html" />
+    <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\HtmlPage1.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\0.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\1.gif" />
     <Content Include="MSITLabSrc%2820220529%29\Lab08\WindowObject\WinImages\101.gif" />

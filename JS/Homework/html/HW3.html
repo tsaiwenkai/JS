@@ -12,35 +12,37 @@
         .n {
             filter: grayscale(0); /*顏色不變*/
         }
-
     </style>
 
 </head>
 <body>
     <div class="rating">
-        <img id="idstar" class="s" src="../Image/star.jpg" />
-        <img id="idstar" class="s" src="../Image/star.jpg" />
-        <img id="idstar" class="s" src="../Image/star.jpg" />
-        <img id="idstar" class="s" src="../Image/star.jpg" />
-        <img id="idstar" class="s" src="../Image/star.jpg" />
+        <img id="idstar1" class="s" src="../Image/star.jpg" />
+        <img id="idstar2" class="s" src="../Image/star.jpg" />
+        <img id="idstar3" class="s" src="../Image/star.jpg" />
+        <img id="idstar4" class="s" src="../Image/star.jpg" />
+        <img id="idstar5" class="s" src="../Image/star.jpg" />
     </div>
     <script>
         // http://blog.shihshih.com/css-filter/
         //document.getElementById("idstar").addEventListener("mouseover", mouseOver);  //事件繫結，滑鼠滑入
         //document.getElementById("idstar").addEventListener("mouseout", mouseOut);    //事件繫結，滑鼠滑出
-
-        const stars = document.getElementsByClassName("s");
-        for (var i = 0; i < stars.length; i++) {
-            //console.log(stars[i]);
-            stars[i].addEventListener("mouseover", function () {
-                stars[i].className = ;
-            });
+        let index = 0;
+        let stars = document.querySelectorAll(".s");
+        for (let star of stars) {
+            star.addEventListener("mouseover", mouseOver);
+            star.addEventListener("mouseout", mouseOut);
+            index++;
+        }
+        
+        function mouseOver() {
+            document.images[index].className = "n";
         }
 
 
-            //function mouseOut() {
-            //    document.getElementById("idstar").className = "s";
-            //}
+        function mouseOut() {
+            document.images[index].className = "s";
+                }
     </script>
 </body>
 </html>

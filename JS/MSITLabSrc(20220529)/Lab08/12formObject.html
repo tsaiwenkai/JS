@@ -26,9 +26,15 @@
         document.querySelector("#idsubmit").addEventListener("click",submitf);
 
         function checkf() {
-
+            let elem = document.forms[0].elements;
+            for (var ele of elem) {
+                if (ele.checked) {
+                    console.log(ele.value)
+                }
+            }
         }
-
+        console.log(document.forms[0].length);
+        console.log(document.forms[0].elements.length);
         function resetf() {
             document.forms[0].reset();
         }

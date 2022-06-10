@@ -27,13 +27,15 @@
         }
 
         //取消事件氣泡bubbling(stopPropagation())
-        function divClick(event) {
+        function divClick() {
             window.alert("div");
+            event.stopPropagation();
             
         }
 
         function pClick() {
             window.alert("p");
+            /*event.stopPropagation();*/
         }
 
         function hrefClick() {

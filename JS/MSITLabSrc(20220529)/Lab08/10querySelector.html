@@ -14,12 +14,12 @@
     <table>
         <tr>
             <td id="td1">A1</td>
-            <td class="myclass">B2</td>
+            <td class="myclass" name="123">B2</td>
             <td>C3</td>
         </tr>
         <tr>
             <td>D4</td>
-            <td class="myclass">E5</td>
+            <td class="myclass" name="123" >E5</td>
             <td>F6</td>
         </tr>
     </table>
@@ -28,14 +28,19 @@
     
     <script>
         //使用document.getElementById()
-        
+         
+        console.log(document.getElementById("td1"))
 
         //使用document.querySelector()
-       
+        console.log(document.querySelector(".myclass"))
 
 
         //使用document.querySelectorAll()
-        
+        console.log(document.querySelectorAll(".myclass"))
+
+        console.log(document.getElementsByName(".myclass"))
+        let q = document.querySelectorAll("td")
+        console.log(q)
     </script>
 </body>
 </html>

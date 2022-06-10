@@ -8,13 +8,19 @@
 <body>
     <div id="iddiv">div</div>
     <input type="button" id="CEle" value="CreateElement">
-
+    <input type="button" id="REle" value="RemoveElement">
     <script>
         document.querySelector("#CEle").addEventListener("click", CreateElement)
+        document.querySelector("#REle").addEventListener("click", RemoveElement)
 
+        function RemoveElement() {
+            let m = document.getElementById("image")
+            //console.log(m);
+            m.remove();
+        }
         function CreateElement() {
             let theDIV = document.querySelector("#iddiv");  //取得div物件
-
+            
             let eleP = document.createElement("p");
             let txtP = document.createTextNode("Hello World");
             eleP.appendChild(txtP);
@@ -23,6 +29,7 @@
 
             let eleImg = document.createElement("img");
             eleImg.setAttribute("src", "DOM/DOMImage/rabbit-hat.gif");
+            eleImg.setAttribute("id", "image");
 
             theDIV.appendChild(eleImg);
         }
