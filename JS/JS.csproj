@@ -67,11 +67,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Homework\HomePage.html" />
     <Content Include="Homework\html\HW3.html" />
     <Content Include="Homework\html\HW2.html" />
     <Content Include="Homework\html\HW1.html" />
     <Content Include="Homework\css\StyleSheet1.css" />
     <Content Include="Homework\html\HW4.html" />
+    <Content Include="Homework\html\HW5.html" />
     <Content Include="Homework\hw2.js" />
     <Content Include="Homework\image\changepic\1.jpg" />
     <Content Include="Homework\image\changepic\2.jpg" />
@@ -79,7 +81,6 @@
     <Content Include="Homework\image\changepic\4.jpg" />
     <Content Include="Homework\image\changepic\5.jpg" />
     <Content Include="Homework\image\star.jpg" />
-    <Content Include="Homework\imgChange.js" />
     <Content Include="MSITLabSrc%2820220529%29\favicon.ico" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\01first.html" />
     <Content Include="MSITLabSrc%2820220529%29\Lab01\02getElementContent.html" />

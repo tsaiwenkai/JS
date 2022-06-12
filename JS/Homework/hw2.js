@@ -1,4 +1,19 @@
-﻿function checkName() {
+﻿//表格
+let list = document.getElementById("list")
+
+list.innerHTML += `<table id="listtable" style='border: px solid #558c5b; background-color:gray;'></table>`;
+let table = document.getElementById("listtable")
+table.innerHTML += `<tr id="listtr"style='border: px solid #558c5b ; background-color:red'></tr>`
+let tr = document.getElementById("listtr")
+for (var i = 2; i < 10; i++) {
+    tr.innerHTML += `<td id="listtd${i}"></td>`;
+    let td = document.getElementById(`"listtd${i}"`)
+    for (var j = 1; j < 10; j++) {       
+        td.innerHTML +=  `${i} * ${j}= ${i * j}<br>`;
+    }
+}
+//個人資料
+function checkName() {
     let name = document.getElementById("idtxtname").value;
     let namelnth = name.length;
     let namsp = document.getElementById("idnamesp");

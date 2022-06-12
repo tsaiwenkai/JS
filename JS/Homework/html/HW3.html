@@ -17,32 +17,37 @@
 </head>
 <body>
     <div class="rating">
-        <img id="idstar1" class="s" src="../Image/star.jpg" />
-        <img id="idstar2" class="s" src="../Image/star.jpg" />
-        <img id="idstar3" class="s" src="../Image/star.jpg" />
-        <img id="idstar4" class="s" src="../Image/star.jpg" />
-        <img id="idstar5" class="s" src="../Image/star.jpg" />
+        <img id="idstar1" class="s" src="../Image/star.jpg" onmousemove="mouseOver(1)"  onmousedown="mouseClick(1)"/>
+        <img id="idstar2" class="s" src="../Image/star.jpg" onmousemove="mouseOver(2)" onmousedown="mouseClick(2)"/>
+        <img id="idstar3" class="s" src="../Image/star.jpg" onmousemove="mouseOver(3)" onmousedown="mouseClick(3)"/>
+        <img id="idstar4" class="s" src="../Image/star.jpg" onmousemove="mouseOver(4)" onmousedown="mouseClick(4)"/>
+        <img id="idstar5" class="s" src="../Image/star.jpg" onmousemove="mouseOver(5)" onmousedown="mouseClick(5)" />
+        <div id="str"></div>
     </div>
     <script>
-        // http://blog.shihshih.com/css-filter/
-        //document.getElementById("idstar").addEventListener("mouseover", mouseOver);  //事件繫結，滑鼠滑入
-        //document.getElementById("idstar").addEventListener("mouseout", mouseOut);    //事件繫結，滑鼠滑出
-        let index = 0;
-        let stars = document.querySelectorAll(".s");
-        for (let star of stars) {
-            star.addEventListener("mouseover", mouseOver);
-            star.addEventListener("mouseout", mouseOut);
-            index++;
-        }
-        
-        function mouseOver() {
-            document.images[index].className = "n";
-        }
-
-
-        function mouseOut() {
-            document.images[index].className = "s";
+        var arry = ["1星!非常爛!", "2星?不太行", "3星..還可以拉", "4星!唉呦不錯喔", "5星!!!Awsome!"];
+        var divstr = document.getElementById("str");
+        function mouseOver(i) {
+            let stardiv = document.getElementById("rating")
+            for (var j = 1; j < 6; j++) {
+                let star1 = document.getElementById("idstar" + j);
+                if (j <= i) {
+                    star1.setAttribute("class", "n")
                 }
+                else {
+                    star1.setAttribute("class", "s")
+                }                
+            }          
+        }
+        function mouseClick(i) {
+            //console.log(arry[i-1]);
+            if (i < 0) {
+                divstr.innerHTML = "";
+            }
+            else {              
+                divstr.innerHTML =`<span>${arry[i-1]}</span>`;
+            }
+        }
     </script>
 </body>
 </html>
